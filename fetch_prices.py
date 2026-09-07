@@ -1,6 +1,7 @@
-import yfinance as yf
+import requests
 import json
 import os
+import time
 from datetime import datetime
 
 TICKERS = [
@@ -9,17 +10,30 @@ TICKERS = [
     'RLC.PS', 'SCC.PS',
 ]
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'Accept': 'application/json',
+    'Referer': 'https://finance.yahoo.com',
+}
+
+def get_price(ticker):
+    url = f'https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?interval=1d&range=5d'
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        data = r.json()
+        meta = data['chart']['result'][0]['meta']
+        price = meta.get('regularMarketPrice') or meta.get('chartPreviousClose', 0)
+        prev = meta.get('previousClose') or meta.get('chartPreviousClose', price)
+        pct = ((price - prev) / prev * 100) if prev else 0
+        return float(price), float(pct)
+    except Exception as e:
+        print(f"  {ticker} error: {e}")
+        return None, None
+
 results = []
 for ticker in TICKERS:
-    try:
-        t = yf.Ticker(ticker)
-        hist = t.history(period='5d')
-        if hist.empty:
-            print(f"ERROR {ticker}: no history data")
-            continue
-        price = float(hist['Close'].iloc[-1])
-        prev = float(hist['Close'].iloc[-2]) if len(hist) >= 2 else price
-        pct = ((price - prev) / prev * 100) if prev else 0
+    price, pct = get_price(ticker)
+    if price and price > 0:
         results.append({
             'symbol': ticker,
             'regularMarketPrice': round(price, 4),
@@ -29,8 +43,9 @@ for ticker in TICKERS:
             'trailingAnnualDividendRate': None,
         })
         print(f"{ticker}: {price:.4f} ({pct:+.2f}%)")
-    except Exception as e:
-        print(f"ERROR {ticker}: {e}")
+    else:
+        print(f"ERROR {ticker}: no price data")
+    time.sleep(0.3)
 
 output = {
     'updated': datetime.utcnow().isoformat() + 'Z',
