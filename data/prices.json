@@ -1,63 +1,6 @@
 {
-  "updated": "2026-09-07T11:23:41.162251Z",
+  "updated": "2026-09-07T11:26:05.325954Z",
   "quoteResponse": {
-    "result": [
-      {
-        "symbol": "ALI.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "DMC.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "FLI.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "GLO.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "MER.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "RLC.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      },
-      {
-        "symbol": "SCC.PS",
-        "regularMarketPrice": 0.0,
-        "regularMarketChangePercent": 0.0,
-        "exDividendDate": null,
-        "dividendDate": null,
-        "trailingAnnualDividendRate": null
-      }
-    ]
+    "result": []
   }
 }
