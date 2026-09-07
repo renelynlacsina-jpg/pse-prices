@@ -1,33 +1,41 @@
-name: Fetch PSE Prices
+import yfinance as yf
+import json
+import os
+from datetime import datetime
 
-on:
-  schedule:
-    # Every 30 min Mon-Fri, 01:00-07:30 UTC = 09:00-15:30 PHT
-    - cron: '0,30 1-7 * * 1-5'
-  workflow_dispatch: # manual trigger button in GitHub UI
+TICKERS = [
+    'ALI.PS', 'CLI.PS', 'CNVRG.PS', 'COSCO.PS', 'DMC.PS', 'FB.PS',
+    'FLI.PS', 'GLO.PS', 'GMA7.PS', 'KEEPR.PS', 'MER.PS', 'MONDE.PS',
+    'RLC.PS', 'SCC.PS',
+]
 
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
+results = []
+for ticker in TICKERS:
+    try:
+        t = yf.Ticker(ticker)
+        info = t.fast_info
+        price = info.last_price or 0
+        prev  = info.previous_close or price
+        pct   = ((price - prev) / prev * 100) if prev else 0
+        results.append({
+            'symbol': ticker,
+            'regularMarketPrice': round(float(price), 4),
+            'regularMarketChangePercent': round(float(pct), 4),
+            'exDividendDate': None,
+            'dividendDate': None,
+            'trailingAnnualDividendRate': None,
+        })
+        print(f"{ticker}: {price:.4f} ({pct:+.2f}%)")
+    except Exception as e:
+        print(f"ERROR {ticker}: {e}")
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+output = {
+    'updated': datetime.utcnow().isoformat() + 'Z',
+    'quoteResponse': {'result': results},
+}
 
-      - name: Install yfinance
-        run: pip install yfinance
+os.makedirs('data', exist_ok=True)
+with open('data/prices.json', 'w') as f:
+    json.dump(output, f, indent=2)
 
-      - name: Fetch PSE prices
-        run: python fetch_prices.py
-
-      - name: Commit updated prices
-        run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git add data/prices.json
-          git diff --staged --quiet || git commit -m "chore: update PSE prices"
-          git push
+print(f"\nSaved {len(results)} stocks.")
