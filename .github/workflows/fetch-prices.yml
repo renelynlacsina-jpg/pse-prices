@@ -1,0 +1,33 @@
+name: Fetch PSE Prices
+
+on:
+  schedule:
+    # Every 30 min Mon-Fri, 01:00-07:30 UTC = 09:00-15:30 PHT
+    - cron: '0,30 1-7 * * 1-5'
+  workflow_dispatch: # manual trigger button in GitHub UI
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install yfinance
+        run: pip install yfinance
+
+      - name: Fetch PSE prices
+        run: python fetch_prices.py
+
+      - name: Commit updated prices
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add data/prices.json
+          git diff --staged --quiet || git commit -m "chore: update PSE prices"
+          git push
