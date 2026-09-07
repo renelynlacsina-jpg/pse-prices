@@ -13,14 +13,17 @@ results = []
 for ticker in TICKERS:
     try:
         t = yf.Ticker(ticker)
-        info = t.fast_info
-        price = info.last_price or 0
-        prev  = info.previous_close or price
-        pct   = ((price - prev) / prev * 100) if prev else 0
+        hist = t.history(period='5d')
+        if hist.empty:
+            print(f"ERROR {ticker}: no history data")
+            continue
+        price = float(hist['Close'].iloc[-1])
+        prev = float(hist['Close'].iloc[-2]) if len(hist) >= 2 else price
+        pct = ((price - prev) / prev * 100) if prev else 0
         results.append({
             'symbol': ticker,
-            'regularMarketPrice': round(float(price), 4),
-            'regularMarketChangePercent': round(float(pct), 4),
+            'regularMarketPrice': round(price, 4),
+            'regularMarketChangePercent': round(pct, 4),
             'exDividendDate': None,
             'dividendDate': None,
             'trailingAnnualDividendRate': None,
