@@ -7,7 +7,7 @@ from datetime import datetime
 TICKERS = [
     'ALI.PS', 'CLI.PS', 'CNVRG.PS', 'COSCO.PS', 'DMC.PS', 'FB.PS',
     'FLI.PS', 'GLO.PS', 'GMA7.PS', 'KEEPR.PS', 'MER.PS', 'MONDE.PS',
-    'RLC.PS', 'SCC.PS',
+    'RLC.PS', 'SCC.PS'
 ]
 
 HEADERS = {
