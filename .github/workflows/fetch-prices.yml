@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install yfinance
-        run: pip install yfinance
+      - name: Install dependencies
+        run: pip install requests
 
       - name: Fetch PSE prices
         run: python fetch_prices.py
