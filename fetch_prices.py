@@ -1,45 +1,35 @@
-import requests, csv, json, os, time
+import requests, json, os, re, time
 from datetime import datetime
-from io import StringIO
 
-TICKERS = [
-    'ali.ps', 'cli.ps', 'cnvrg.ps', 'cosco.ps', 'dmc.ps', 'fb.ps',
-    'fli.ps', 'glo.ps', 'gma7.ps', 'keepr.ps', 'mer.ps', 'monde.ps',
-    'rlc.ps', 'scc.ps',
-]
+KEY = os.environ['SCRAPERAPI_KEY']
+TICKERS = ['ALI.PS','CLI.PS','CNVRG.PS','COSCO.PS','DMC.PS','FB.PS',
+           'FLI.PS','GLO.PS','GMA7.PS','KEEPR.PS','MER.PS','MONDE.PS','RLC.PS','SCC.PS']
 
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+def get_price(ticker):
+    r = requests.get('https://api.scraperapi.com',
+        params={'api_key': KEY, 'url': f'https://finance.yahoo.com/quote/{ticker}/'},
+        timeout=60)
+    print(f'{ticker}: HTTP {r.status_code}')
+    m = re.search(r'"regularMarketPrice":\{"raw":([\d.]+)', r.text)
+    if m:
+        price = float(m.group(1))
+        pm = re.search(r'"regularMarketChangePercent":\{"raw":(-?[\d.]+)', r.text)
+        return price, float(pm.group(1)) if pm else 0
+    return None, None
 
 results = []
 for ticker in TICKERS:
-    try:
-        url = f'https://stooq.com/q/d/l/?s={ticker}&i=d'
-        r = requests.get(url, headers=HEADERS, timeout=10)
-        print(f'{ticker}: HTTP {r.status_code}  preview={r.text[:80]}')
-        if r.status_code == 200 and ',' in r.text:
-            rows = list(csv.DictReader(StringIO(r.text)))
-            if rows:
-                last = rows[-1]
-                price = float(last.get('Close', 0))
-                prev  = float(rows[-2]['Close']) if len(rows) >= 2 else price
-                pct   = ((price - prev) / prev * 100) if prev else 0
-                if price > 0:
-                    results.append({
-                        'symbol': ticker.upper(),
-                        'regularMarketPrice': round(price, 4),
-                        'regularMarketChangePercent': round(pct, 4),
-                        'exDividendDate': None, 'dividendDate': None,
-                        'trailingAnnualDividendRate': None,
-                    })
-                    print(f'  OK: {price:.4f} ({pct:+.2f}%)')
-                    continue
+    price, pct = get_price(ticker)
+    if price and price > 0:
+        results.append({'symbol': ticker, 'regularMarketPrice': round(price,4),
+            'regularMarketChangePercent': round(pct,4),
+            'exDividendDate': None, 'dividendDate': None, 'trailingAnnualDividendRate': None})
+        print(f'  OK: {price}')
+    else:
         print(f'  FAILED')
-    except Exception as e:
-        print(f'  ERROR: {e}')
-    time.sleep(0.5)
+    time.sleep(2)
 
-output = {'updated': datetime.utcnow().isoformat() + 'Z', 'quoteResponse': {'result': results}}
+output = {'updated': datetime.utcnow().isoformat()+'Z', 'quoteResponse': {'result': results}}
 os.makedirs('data', exist_ok=True)
-with open('data/prices.json', 'w') as f:
-    json.dump(output, f, indent=2)
-print(f'\nSaved {len(results)} stocks.')
+with open('data/prices.json','w') as f: json.dump(output, f, indent=2)
+print(f'Saved {len(results)} stocks.')
