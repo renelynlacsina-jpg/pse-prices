@@ -1,6 +1,119 @@
 {
-  "updated": "2026-09-07T13:49:02.910586Z",
+  "updated": "2026-09-07T13:57:58.852759Z",
   "quoteResponse": {
-    "result": []
+    "result": [
+      {
+        "symbol": "ALI.PS",
+        "regularMarketPrice": 15.1,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "CLI.PS",
+        "regularMarketPrice": 2.06,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "CNVRG.PS",
+        "regularMarketPrice": 9.14,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "COSCO.PS",
+        "regularMarketPrice": 7.8,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "DMC.PS",
+        "regularMarketPrice": 7.88,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "FB.PS",
+        "regularMarketPrice": 46.75,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "FLI.PS",
+        "regularMarketPrice": 0.68,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "GLO.PS",
+        "regularMarketPrice": 1609.0,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "GMA7.PS",
+        "regularMarketPrice": 4.07,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "KEEPR.PS",
+        "regularMarketPrice": 1.86,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "MER.PS",
+        "regularMarketPrice": 480.0,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "MONDE.PS",
+        "regularMarketPrice": 6.81,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "RLC.PS",
+        "regularMarketPrice": 17.5,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      },
+      {
+        "symbol": "SCC.PS",
+        "regularMarketPrice": 17.7,
+        "regularMarketChangePercent": 0,
+        "exDividendDate": null,
+        "dividendDate": null,
+        "trailingAnnualDividendRate": null
+      }
+    ]
   }
 }
