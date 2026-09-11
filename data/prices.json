@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-11T03:43:43.352504Z",
+  "updated": "2026-09-11T04:16:14.736081Z",
   "quoteResponse": {
     "result": [
       {
         "symbol": "ALI.PS",
-        "regularMarketPrice": 14.66,
+        "regularMarketPrice": 14.68,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -28,7 +28,7 @@
       },
       {
         "symbol": "COSCO.PS",
-        "regularMarketPrice": 7.85,
+        "regularMarketPrice": 7.95,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 8.19,
+        "regularMarketPrice": 8.17,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -60,7 +60,7 @@
       },
       {
         "symbol": "GLO.PS",
-        "regularMarketPrice": 1598.0,
+        "regularMarketPrice": 1597.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "SCC.PS",
-        "regularMarketPrice": 17.78,
+        "regularMarketPrice": 17.7,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
