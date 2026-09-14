@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T03:45:01.206743Z",
+  "updated": "2026-09-14T04:15:54.445827Z",
   "quoteResponse": {
     "result": [
       {
@@ -12,7 +12,7 @@
       },
       {
         "symbol": "CLI.PS",
-        "regularMarketPrice": 2.02,
+        "regularMarketPrice": 2.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 8.2,
+        "regularMarketPrice": 8.22,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -44,7 +44,7 @@
       },
       {
         "symbol": "FB.PS",
-        "regularMarketPrice": 46.0,
+        "regularMarketPrice": 45.95,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -68,7 +68,7 @@
       },
       {
         "symbol": "GMA7.PS",
-        "regularMarketPrice": 4.0,
+        "regularMarketPrice": 3.94,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -92,7 +92,7 @@
       },
       {
         "symbol": "MONDE.PS",
-        "regularMarketPrice": 6.87,
+        "regularMarketPrice": 6.89,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
