@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-25T06:19:20.149951Z",
+  "updated": "2026-09-25T06:48:36.406307Z",
   "quoteResponse": {
     "result": [
       {
         "symbol": "ALI.PS",
-        "regularMarketPrice": 15.02,
+        "regularMarketPrice": 15.04,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -12,7 +12,7 @@
       },
       {
         "symbol": "CLI.PS",
-        "regularMarketPrice": 1.99,
+        "regularMarketPrice": 2.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -20,7 +20,7 @@
       },
       {
         "symbol": "CNVRG.PS",
-        "regularMarketPrice": 9.19,
+        "regularMarketPrice": 9.12,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -28,7 +28,7 @@
       },
       {
         "symbol": "COSCO.PS",
-        "regularMarketPrice": 7.38,
+        "regularMarketPrice": 7.39,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 7.75,
+        "regularMarketPrice": 7.73,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -44,7 +44,7 @@
       },
       {
         "symbol": "FB.PS",
-        "regularMarketPrice": 43.6,
+        "regularMarketPrice": 44.4,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -52,7 +52,7 @@
       },
       {
         "symbol": "FLI.PS",
-        "regularMarketPrice": 0.7,
+        "regularMarketPrice": 0.68,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -60,7 +60,7 @@
       },
       {
         "symbol": "GLO.PS",
-        "regularMarketPrice": 1563.0,
+        "regularMarketPrice": 1558.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -84,7 +84,7 @@
       },
       {
         "symbol": "MER.PS",
-        "regularMarketPrice": 448.2,
+        "regularMarketPrice": 442.8,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -92,7 +92,7 @@
       },
       {
         "symbol": "MONDE.PS",
-        "regularMarketPrice": 6.13,
+        "regularMarketPrice": 6.03,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -100,7 +100,7 @@
       },
       {
         "symbol": "RLC.PS",
-        "regularMarketPrice": 16.9,
+        "regularMarketPrice": 16.98,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "SCC.PS",
-        "regularMarketPrice": 15.3,
+        "regularMarketPrice": 15.18,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
