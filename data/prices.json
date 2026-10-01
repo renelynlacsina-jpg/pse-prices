@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-01T06:51:30.672587Z",
+  "updated": "2026-10-01T07:18:17.039789Z",
   "quoteResponse": {
     "result": [
       {
         "symbol": "ALI.PS",
-        "regularMarketPrice": 15.02,
+        "regularMarketPrice": 15.1,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
