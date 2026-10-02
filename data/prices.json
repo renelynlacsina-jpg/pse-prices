@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-02T06:51:05.257742Z",
+  "updated": "2026-10-02T07:17:29.295950Z",
   "quoteResponse": {
     "result": [
       {
         "symbol": "ALI.PS",
-        "regularMarketPrice": 15.12,
+        "regularMarketPrice": 15.14,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -20,7 +20,7 @@
       },
       {
         "symbol": "CNVRG.PS",
-        "regularMarketPrice": 8.81,
+        "regularMarketPrice": 8.8,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 7.26,
+        "regularMarketPrice": 7.39,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -68,7 +68,7 @@
       },
       {
         "symbol": "GMA7.PS",
-        "regularMarketPrice": 3.37,
+        "regularMarketPrice": 3.39,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -84,7 +84,7 @@
       },
       {
         "symbol": "MER.PS",
-        "regularMarketPrice": 420.6,
+        "regularMarketPrice": 416.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -92,7 +92,7 @@
       },
       {
         "symbol": "MONDE.PS",
-        "regularMarketPrice": 6.25,
+        "regularMarketPrice": 6.2,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -100,7 +100,7 @@
       },
       {
         "symbol": "RLC.PS",
-        "regularMarketPrice": 16.0,
+        "regularMarketPrice": 15.9,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "SCC.PS",
-        "regularMarketPrice": 13.44,
+        "regularMarketPrice": 13.4,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
