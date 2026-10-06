@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T06:52:09.268322Z",
+  "updated": "2026-10-06T07:17:29.033116Z",
   "quoteResponse": {
     "result": [
       {
@@ -20,7 +20,7 @@
       },
       {
         "symbol": "CNVRG.PS",
-        "regularMarketPrice": 8.83,
+        "regularMarketPrice": 8.81,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 7.35,
+        "regularMarketPrice": 7.31,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
