@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-07T04:49:25.115526Z",
+  "updated": "2026-10-07T05:16:41.369730Z",
   "quoteResponse": {
     "result": [
       {
         "symbol": "ALI.PS",
-        "regularMarketPrice": 15.42,
+        "regularMarketPrice": 15.44,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -36,7 +36,7 @@
       },
       {
         "symbol": "DMC.PS",
-        "regularMarketPrice": 7.26,
+        "regularMarketPrice": 7.25,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -84,7 +84,7 @@
       },
       {
         "symbol": "MER.PS",
-        "regularMarketPrice": 414.0,
+        "regularMarketPrice": 413.6,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -100,7 +100,7 @@
       },
       {
         "symbol": "RLC.PS",
-        "regularMarketPrice": 15.9,
+        "regularMarketPrice": 16.02,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "SCC.PS",
-        "regularMarketPrice": 12.54,
+        "regularMarketPrice": 12.56,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
