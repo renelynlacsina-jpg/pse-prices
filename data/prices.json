@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T06:51:50.837661Z",
+  "updated": "2026-10-29T14:00:48.703274Z",
   "quoteResponse": {
     "result": [
       {
@@ -20,7 +20,7 @@
       },
       {
         "symbol": "CNVRG.PS",
-        "regularMarketPrice": 9.2,
+        "regularMarketPrice": 9.18,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -28,7 +28,7 @@
       },
       {
         "symbol": "COSCO.PS",
-        "regularMarketPrice": 7.42,
+        "regularMarketPrice": 7.39,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -60,7 +60,7 @@
       },
       {
         "symbol": "GLO.PS",
-        "regularMarketPrice": 1526.0,
+        "regularMarketPrice": 1534.0,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -84,7 +84,7 @@
       },
       {
         "symbol": "MER.PS",
-        "regularMarketPrice": 429.6,
+        "regularMarketPrice": 427.2,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -92,7 +92,7 @@
       },
       {
         "symbol": "MONDE.PS",
-        "regularMarketPrice": 5.93,
+        "regularMarketPrice": 5.95,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -100,7 +100,7 @@
       },
       {
         "symbol": "RLC.PS",
-        "regularMarketPrice": 15.98,
+        "regularMarketPrice": 16.08,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "SCC.PS",
-        "regularMarketPrice": 10.64,
+        "regularMarketPrice": 10.66,
         "regularMarketChangePercent": 0,
         "exDividendDate": null,
         "dividendDate": null,
